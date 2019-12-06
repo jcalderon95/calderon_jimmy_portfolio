@@ -1,0 +1,196 @@
+.homeSection{
+    max-width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    .title{
+        font-family: $main-font;
+        color: grey;
+        letter-spacing: 1px;
+        font-size: 30px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 40px;
+
+        .block{
+            display: block;
+            color: $gold;
+            font-size: 35px;
+
+        }
+    }
+
+    .homeUnderline{
+        height: 1.5px;
+        margin-top: 20px;
+    }
+
+    .subetitleHome{
+        font-family: $main-font;
+        color: $grey;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 400px){
+	.homeSection{
+        margin-top: 120px;
+
+        .title{
+            font-size: 35px;
+            line-height: 40px;
+    
+            .block{
+                display: block;
+                color: $gold;
+                font-size: 40px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            font-size: 24px;
+        }
+    
+    }
+}
+
+
+@media screen and (min-width: 600px){
+	.homeSection{
+        margin-top: 140px;
+
+        .title{
+            font-size: 38px;
+            line-height: 40px;
+    
+            .block{
+                display: block;
+                color: $gold;
+                font-size: 43px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            font-size: 27px;
+        }
+    
+    }
+}
+
+@media screen and (min-width: 500px){
+	.homeSection{
+
+        .title{
+            line-height: 47px;
+
+            .block{
+                display: inline;
+                color: $gold;
+                font-size: 45px;
+                margin-left: 5;
+    
+            }
+        }
+
+    
+    }
+}
+
+@media screen and (min-width: 600px){
+	.homeSection{
+        margin-top: 150px;
+
+        .title{
+            font-size: 41px;
+            line-height: 50px;
+    
+            .block{
+                font-size: 45px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            font-size: 31px;
+        }
+    
+    }
+}
+
+
+@media screen and (min-width: 800px){
+	.homeSection{
+        margin-top: 150px;
+
+        .title{
+            font-size: 44px;
+            line-height: 60px;
+    
+            .block{
+                font-size: 48px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            font-size: 34px;
+        }
+    
+    }
+}
+
+@media screen and (min-width: 1024px){
+	.homeSection{
+        margin-top: 150px;
+
+        .title{
+            font-size: 60px;
+            line-height: 70px;
+    
+            .block{
+                font-size: 60px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            margin-top: 60px;
+            font-size: 40px;
+        }
+    
+    }
+}
+
