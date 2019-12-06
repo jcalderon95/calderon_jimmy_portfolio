@@ -1,0 +1,14 @@
+@import "_vars";
+@import "modules/_nav";
+
+@import url("https://use.typekit.net/bvo1fsk.css");
+
+
+body{
+    background-color: $background_color;
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}

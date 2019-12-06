@@ -9,9 +9,35 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
 </head>
 <body>
-    
+    <h1 class="hidden">Jimmy Caldero | Portfolio Website</h1>
+
+    <header>   
+        <nav>
+        <h2 class="hidden">Main Navigation</h2>
+            <div class="logoCon">
+                <img src="images/logo.svg" alt="Logo Image" id="logo">
+            </div>
+
+            <div class="menuCon">
+                <img src="images/menu.svg" alt="Menu Button" id="menu">
+            </div>
+        </nav>
+    </header>
+
+    <div class="navLightbox">
+            <span class="navClose">X</span>
+            <ul>
+                <li><a class="navLink" href="#">HOME</a></li>
+                <li><a class="navLink" href="#">ABOUT</a></li>
+                <li><a class="navLink" href="#">PORTFOLIO</a></li>
+                <li><a class="navLink" href="#">CONTACT</a></li>
+            </ul>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
