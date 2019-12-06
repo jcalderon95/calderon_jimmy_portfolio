@@ -58,9 +58,10 @@ nav{
                 color: #CCAE88;
                 text-decoration: none;
                 font-family: $main-font;
-                transition: all .3s ease-in;
+                //transition: all .3s ease-in;
                 letter-spacing: 10px;
                 font-style: normal;
+                //opacity: 0;
 
                 &:hover{
                     color: rgb(220, 189, 148);
@@ -78,11 +79,11 @@ nav{
         cursor: pointer;
         font-family: $main-font;
 
-        transition: .3s ease-in;
+        // transition: .3s ease-in;
 
         &:hover{
-            transform: scale(1.1);
             
+            color: rgb(220, 189, 148);
         }
     }
     
