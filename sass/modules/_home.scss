@@ -3,7 +3,7 @@
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 130px;
 
     .title{
         font-family: $main-font;
@@ -97,7 +97,7 @@
 
 @media screen and (min-width: 500px){
 	.homeSection{
-
+        margin-top: 145px;
         .title{
             line-height: 47px;
 
@@ -169,7 +169,7 @@
 
 @media screen and (min-width: 1024px){
 	.homeSection{
-        margin-top: 150px;
+        margin-top: 190px;
 
         .title{
             font-size: 60px;
@@ -188,7 +188,7 @@
     
         .subetitleHome{
             margin-top: 60px;
-            font-size: 40px;
+            font-size: 38px;
         }
     
     }
