@@ -1,0 +1,89 @@
+.contactSection{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    h2{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .contactText{
+        font-family: $main-font;
+        font-size: 25px;
+        font-weight: 300;
+        font-style: normal;
+        color: $grey;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .underlineContact{
+        height: 1.5px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 68px;
+    }
+
+    .formCon{
+        background-color: #2D2D2F;
+        max-width: 700px;
+        filter: drop-shadow(0 0 0.75rem rgb(32, 32, 33) );
+        padding-top: 78px;
+        margin-bottom: 100px;
+
+        form{
+            max-width: 445px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto; 
+            padding: 0 10px 0 10px;           
+
+            label{
+                font-family: $main-font;
+                color: #7E7E7E;
+                font-size: 25px;
+                font-weight: 300;
+                font-style: normal;
+                letter-spacing: 3px;
+            }
+
+            input{
+                margin-bottom: 40px;
+                background: none;
+                color: $gold;
+                font-size: 20px;
+                border: none;
+                border-bottom: solid 1px #7E7E7E;
+            }
+
+            #message-field{
+                background: none;
+                color: $gold;
+                font-size: 20px;
+                border: none;
+                border-bottom: solid 1px #7E7E7E;
+                height: 28px;
+            }
+
+            .btnForm{
+                font-family: $main-font;
+                color: #7E7E7E;
+                font-size: 25px;
+                font-weight: 300;
+                font-style: normal;
+                letter-spacing: 3px;
+                border: none;
+                margin: 0 auto;
+                padding: 10px 20px 10px 20px;
+                margin-top: 70px;
+                filter: drop-shadow(0 0 1rem rgb(32, 32, 33) );
+                background-color: #2D2D2F;
+                margin-bottom: 50px;
+            }
+            
+        }
+    }
+}
