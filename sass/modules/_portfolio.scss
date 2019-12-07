@@ -19,8 +19,6 @@
 
         .portfolioProject{
             max-width: 445px;
-            //max-height: 325px;
-            position: relative;
             display: block;
             margin: 0 auto;
 
@@ -28,9 +26,8 @@
                 max-width: 445px;
                 max-height: 300px;
                 width: 100%;
-                position: relative;
                 cursor: pointer;
-                transition: .3s ease-in;
+                transition: .5s ease-in;
                 filter: grayscale(100%);
 
                 &:hover{
@@ -45,7 +42,34 @@
     }
 }
 
+@media screen and (min-width: 400px){
+
+    .portfolioSection{
+        margin-bottom: 150px;
+
+    
+        .headerPortfolio{
+            font-size: 50px;
+        }
+
+    }
+    
+}
+
 
 @media screen and (min-width: 800px){
+
+    .portfolioSection{
+        margin-bottom: 180px;
+
+    
+        .projects{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 4px;
+
+        }
+
+    }
     
 }
