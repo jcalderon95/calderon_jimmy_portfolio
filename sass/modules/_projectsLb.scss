@@ -1,0 +1,31 @@
+.projectsLb{
+    display: none;
+}
+
+.projectsLbOn{
+    display: block;
+    position: absolute;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3B3B3B;
+
+        .projectsClose{
+            position: absolute;
+            color: #CCAE88;
+            right: 15%;
+            top: 5%;
+            font-size: 30px;
+            cursor: pointer;
+            font-family: $main-font;
+
+            // transition: .3s ease-in;
+
+            &:hover{
+                
+                color: rgb(220, 189, 148);
+            }
+        }
+}
