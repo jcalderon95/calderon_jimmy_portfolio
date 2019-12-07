@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 200px;
 
     h2{
         margin-top: 50px;
@@ -50,11 +51,12 @@
 @media screen and (min-width: 800px){
     
     .aboutSection{
-        height: calc(100vh - 18px);
         max-width: 1105px;
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
+        margin-bottom: 200px;
+        
     
         h2{
             margin-top: 0;

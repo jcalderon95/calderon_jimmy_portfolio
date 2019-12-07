@@ -18,8 +18,8 @@
         line-height: 30px;
         text-align: center;
         margin-bottom: 30px;
-        padding-left: 1px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .underlineContact{
@@ -41,7 +41,7 @@
             display: flex;
             flex-direction: column;
             margin: 0 auto; 
-            padding: 0 10px 0 10px;           
+            padding: 0 15px 0 15px;           
 
             label{
                 font-family: $main-font;
@@ -87,6 +87,14 @@
                 filter: drop-shadow(0 0 1rem rgb(32, 32, 33) );
                 background-color: #2D2D2F;
                 margin-bottom: 50px;
+
+                transition: .3s ease-in;
+
+                    &:hover{
+                         transform: scale(1.02);
+                         filter: drop-shadow(0 0 1rem rgb(27, 27, 28) );
+                         color: rgb(142, 142, 142);
+                    }
             }
             
         }
@@ -96,7 +104,10 @@
 @media screen and (min-width: 400px){
 
     .contactSection{
-
+        h2{
+            font-size: 50px;
+            // margin-bottom: 50px;
+        }
     
         .formCon{
 
