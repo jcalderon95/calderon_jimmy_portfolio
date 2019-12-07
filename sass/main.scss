@@ -1,0 +1,27 @@
+@import "_vars";
+@import "modules/_nav";
+@import "modules/_home";
+@import "modules/_about";
+@import "modules/_contact";
+
+@import url("https://use.typekit.net/bvo1fsk.css");
+
+
+body{
+    background-color: $background_color;
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+
+.header{
+    color: $gold;
+    font-family: $main-font;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 20px;
+}

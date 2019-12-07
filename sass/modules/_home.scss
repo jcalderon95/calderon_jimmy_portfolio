@@ -1,0 +1,177 @@
+.homeSection{
+    max-width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 170px;
+
+    .title{
+        font-family: $main-font;
+        color: grey;
+        letter-spacing: 1px;
+        font-size: 35px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 40px;
+
+        .block{
+            display: block;
+            color: $gold;
+            font-size: 35px;
+        }
+    }
+
+    .homeUnderline{
+        height: 1.5px;
+        margin-top: 25px;
+    }
+
+    .subetitleHome{
+        font-family: $main-font;
+        color: $grey;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 400px){
+	.homeSection{
+        margin-top: 120px;
+        margin-bottom: 200px;
+
+        .title{
+            font-size: 35px;
+            line-height: 40px;
+    
+            .block{
+                display: block;
+                color: $gold;
+                font-size: 40px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            font-size: 24px;
+        }
+    
+    }
+}
+
+@media screen and (min-width: 500px){
+	.homeSection{
+        margin-top: 145px;
+        .title{
+            line-height: 47px;
+            font-size: 40px;
+
+            .block{
+                display: inline;
+                color: $gold;
+                font-size: 45px;
+                margin-left: 5;
+    
+            }
+        }
+
+    
+    }
+}
+
+
+@media screen and (min-width: 600px){
+	.homeSection{
+        margin-top: 150px;
+
+        .title{
+            font-size: 41px;
+            line-height: 50px;
+    
+            .block{
+                font-size: 45px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            font-size: 31px;
+        }
+    
+    }
+}
+
+
+@media screen and (min-width: 800px){
+
+    .homeContainer{
+        height: 100vh;
+    }
+
+	.homeSection{
+        margin-top: 150px;
+
+        .title{
+            font-size: 44px;
+            line-height: 60px;
+    
+            .block{
+                font-size: 53px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            font-size: 34px;
+        }
+    
+    }
+}
+
+@media screen and (min-width: 1024px){
+	.homeSection{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 190px;
+
+        .title{
+            font-size: 60px;
+            line-height: 70px;
+    
+            .block{
+                font-size: 60px;
+    
+            }
+        }
+    
+        .homeUnderline{
+            height: 1.5px;
+            margin-top: 23px;
+        }
+    
+        .subetitleHome{
+            margin-top: 60px;
+            font-size: 38px;
+        }
+    
+    }
+}
+

@@ -1,0 +1,108 @@
+// .homeContainer{
+//     height: 100vh;
+// }
+
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    
+
+    #logo{
+        width: 180px;
+    }
+
+    #menu{
+        width: 32px;
+        transition: .3s ease-in;
+
+        &:hover{
+            transform: scale(1.1);
+            
+        }
+        
+    }
+}
+.navLightbox{
+    display: none;
+}
+
+.navLightboxOn{
+    display: block;
+    position: absolute;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3B3B3B;
+
+
+    ul{
+        margin-top: 150px;
+
+        li{
+            margin-top: 40px;
+            transition: all .3s ease-in;
+
+            // &:hover{
+            //     transform: scale(1.01);
+            // }
+
+            a{
+                font-size: 40px;
+                color: #CCAE88;
+                text-decoration: none;
+                font-family: $main-font;
+                //transition: all .3s ease-in;
+                letter-spacing: 10px;
+                font-style: normal;
+                //opacity: 0;
+
+                &:hover{
+                    color: rgb(220, 189, 148);
+                }
+            }
+        }
+    }
+
+    .navClose{
+        position: absolute;
+        color: #CCAE88;
+        right: 15%;
+        top: 5%;
+        font-size: 30px;
+        cursor: pointer;
+        font-family: $main-font;
+
+        // transition: .3s ease-in;
+
+        &:hover{
+            
+            color: rgb(220, 189, 148);
+        }
+    }
+    
+}
+
+@media screen and (min-width: 400px){
+	nav{
+        
+        #logo{
+        width: 200px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px){
+	nav{
+        
+        #logo{
+        width: 230px;
+        }
+    }
+}
