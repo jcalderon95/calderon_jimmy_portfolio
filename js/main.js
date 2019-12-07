@@ -48,24 +48,34 @@
             projectsLb.classList.add('projectsLbOn');
             projectsLb.querySelector('.projectsClose').addEventListener('click', function(){
                 projectsLb.classList.remove('projectsLbOn');
+                portfolioPiece.innerHTML = "";
             });
 
         fetch(url)
         .then(res => res.json())
         .then(data => {   
-            console.log(data[0].Name);
+            console.log(data[0]);
+          
             
+
             portfolioPiece.innerHTML = `
-                <h2>${data[0].Name}</h2>
-                <h3>${data[0].ProjectType}</h3>
+                <h2 class="projectName projectAnim">${data[0].Name}</h2>
+                <h3 class="projectType projectAnim">${data[0].ProjectType}</h3>
                 <div class="projectContent">
-                     <img src="images/${data[0].Image}" alt="${data[0].Name} Image">
+                     <img src="images/${data[0].Image}" alt="${data[0].Name} Image" class="imageLarge projectAnim">
                         <div class="textCon">
-                            <p class="projectText">${data[0].Description}</p>
-                            <h4>${data[0].Role}</h4>
+                            <p class="projectText projectAnim">${data[0].Description}</p>
+                            <h4 class="role projectAnim">Role: ${data[0].Role}</h4>
                         </div>
                 </div>
             `;
+
+            let projectItem = document.querySelectorAll('.projectAnim');
+            let tlProject = new TimelineMax();
+
+            console.log(projectItem);
+
+            tlProject.staggerFrom(projectItem, 1.5, {opacity:0, ease: Power1.easeIn}, 0.2)
 
         })
         .catch((err) => console.log(err));
@@ -81,7 +91,7 @@
         
         
 
-        var tl = new TimelineMax();
+        let tl = new TimelineMax();
 
         // tl.to(navLightbox, 0.5, { opacity: 0})
          tl.from(navLightbox, 0.6, { opacity: 0}, { opacity: 1,  ease: Power0.easeNone})
