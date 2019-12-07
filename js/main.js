@@ -2,11 +2,34 @@
 
     console.log('fired');
 
-    const menu = document.querySelector('.menuCon'),
-          navLightbox = document.querySelector('.navLightbox');
+    const menu         = document.querySelector('.menuCon'),
+          navLightbox  = document.querySelector('.navLightbox'),
+          projectsCon     = document.querySelector('.projects');
 
-          
+    function getPortfolio(){
+        let url = 'includes/portfolio/read.php';
+
+        fetch(url)
+            .then(res => res.json())
+            .then(data => {
+              //console.log(data);
+
+              data.forEach(function(currentData){
+                 console.log(currentData);
+
+                 projectsCon.innerHTML += `
+                 <div class="portfolioProject">
+                    <img data-target="${currentData.ID}" src="images/${currentData.Thumbnail}" alt="${currentData.Name} Image" class="thumbnail">
+                </div>
+                 `;
+                    
+              });
+
+            })
+            .catch((err) => console.log(err));
+    }
     
+    getPortfolio();
 
     function openNav(){
         let navLink = document.querySelectorAll('.navLink'),
@@ -25,8 +48,9 @@
     }
 
 
-    // nav Lighgbox
+    
     menu.addEventListener('click', openNav);
+
     navLightbox.querySelector('.navClose').addEventListener('click', function(){
         navLightbox.classList.remove('navLightboxOn');
     })
