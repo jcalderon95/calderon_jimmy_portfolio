@@ -29,3 +29,7 @@ Mobile first responsive web application with dynamic content. This application w
 * **PHP**
 * **MySql**
 * **GSAP**
+
+## Author
+
+Jimmy Calderon
