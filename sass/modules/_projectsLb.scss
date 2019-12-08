@@ -1,0 +1,206 @@
+.projectsLb{
+    display: none;
+}
+
+.projectsLbOn{
+    display: block;
+    position: absolute;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3B3B3B;
+
+        .projectsClose{
+            position: absolute;
+            color: #CCAE88;
+            right: 10%;
+            top: 3%;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: $main-font;
+
+            // transition: .3s ease-in;
+
+            &:hover{
+                
+                color: rgb(220, 189, 148);
+            }
+        }
+
+        .portfolioPiece{
+            margin-top: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .imageLarge{
+                max-width: 500px;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+
+            .projectName{
+                font-family: $main-font;
+                font-size: 23px;
+                font-weight: 300px;
+                font-style: normal;
+                color: $gold;
+                text-transform: uppercase;
+                line-height: 30px;
+                margin-bottom: 10px;
+
+            }
+
+            .projectType{
+                font-family: $main-font;
+                font-size: 23px;
+                font-weight: 300px;
+                font-style: normal;
+                color: $grey;
+                margin-bottom: 15px;
+            }
+
+            .textCon{
+                max-width: 500px;
+                margin: 0 auto;
+
+                .projectText{
+                    font-family: $main-font;
+                    font-size: 15px;
+                    font-weight: 300px;
+                    font-style: normal;
+                    color: $grey;
+                    text-align: right;
+                    margin-bottom: 8px;
+                    // max-width: 570px;
+                }
+    
+                .role{
+                    font-family: $main-font;
+                    font-size: 16px;
+                    font-weight: 300px;
+                    font-style: normal;
+                    color: $grey;
+                    text-align: right;
+                }
+            }
+
+            
+        }
+        
+}
+
+
+@media screen and (min-width: 768px){
+    
+    .projectsLbOn{
+    
+            .projectsClose{
+                top: 5%;
+                font-size: 30px;
+                
+            }
+    
+            .portfolioPiece{
+            
+                .imageLarge{
+                    max-width: 500px;
+                    width: 100%;
+                }
+    
+                .projectName{
+    
+                    font-size: 30px;
+                    margin-bottom: 15px;
+    
+                }
+    
+                .projectType{
+
+                    font-size: 23px;
+                    // margin-bottom: 15px;
+                }
+    
+                .textCon{
+    
+                    .projectText{
+                        line-height: 22px;
+                        font-size: 17px;
+                    }
+        
+                    .role{
+                        font-family: $main-font;
+                        font-size: 18px;
+                    }
+                }
+    
+                
+            }
+            
+    }
+}
+
+@media screen and (min-width: 1024px){
+    
+    .projectsLbOn{
+    
+            .projectsClose{
+                top: 5%;
+                font-size: 30px;
+                
+            }
+    
+            .portfolioPiece{
+                margin-top: 130px;
+
+                .projectContent{
+                    display: flex;
+                    max-width: 1100px;
+                    margin: 0 auto;
+                    // padding-right: 10px;
+                    // // padding-left: 100px;
+                    margin-top: 60px;
+                }
+            
+                .imageLarge{
+                    max-width: 500px;
+                    width: 100%;
+                    
+                }
+    
+                .projectName{
+    
+                    font-size: 33px;
+                    margin-bottom: 15px;
+    
+                }
+    
+                .projectType{
+
+                    font-size: 25px;
+                }
+    
+                .textCon{
+    
+                    padding-left: 35px;
+    
+                    .projectText{
+                        margin-top: 30px;
+                        line-height: 33px;
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                    }
+        
+                    .role{
+                        font-family: $main-font;
+                        font-size: 22px;
+                    }
+                }
+    
+                
+            }
+            
+    }
+}
+

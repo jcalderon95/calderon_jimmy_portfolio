@@ -19,9 +19,10 @@
       integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
 </head>
 <body>
-    <h1 class="hidden">Jimmy Caldero | Portfolio Website</h1>
+    <h1 class="hidden">Jimmy Calderon | Portfolio Website</h1>
 
 <div class="homeContainer">
     <header>   
@@ -37,8 +38,9 @@
         </nav>
     </header>
 
-    <section class="homeSection">
-        <h2 class="title">Hello,<br> I am 
+    <section class="homeSection" id="home">
+        <h2 class="title"> <span class="homeAnim1">Hello,</span> 
+        <br> <span class="homeAnim2">I am </span>
         <span class="block">
             JIMMY CALDERON
         </span>
@@ -46,7 +48,8 @@
 
         <img src="images/grey_underline.svg" alt="Grey Underline Image" class="homeUnderline">
 
-        <h3 class="subetitleHome">Web Developer & Multimedia Designer</h3>
+        <h3 class="subetitleHome"> <span class="subtitleAnim1">Web Developer </span>
+            <span class="subtitleAnim2">& Multimedia Designer</span></h3>
 
     </section>
 
@@ -55,9 +58,9 @@
 <!-- End Home Section -->
 
 
-    <section class="aboutSection">
+    <section class="aboutSection" id="about">
 
-        <h2 class="header">ABOUT</h2>
+        <h2 class="header aboutHeader">ABOUT</h2>
 
         <div class="aboutContent">
             <div class="aboutParagraph">
@@ -79,8 +82,21 @@
         </div>
 
     </section>
-
     <!-- end about section -->
+
+    <!-- portfolio section -->
+
+    <section class="portfolioSection" id="portfolio">
+        <h2 class="headerPortfolio">PORTFOLIO</h2>
+
+        <div class="projects">
+
+        </div>
+    </section>
+
+    <!-- end portfolio section -->
+
+    
 
     <!-- <section class="videoReel">
         <h2 class="header">VIDEO REEL</h2>
@@ -95,7 +111,7 @@
 
     <!-- contact section -->
 
-        <section class="contactSection">
+        <section class="contactSection" id="contact">
             <h2 class="header">CONTACT</h2>
 
             <p class="contactText">
@@ -127,13 +143,24 @@
     <div class="navLightbox">
             <span class="navClose">X</span>
             <ul>
-                <li><a class="navLink" href="#">HOME</a></li>
-                <li><a class="navLink" href="#">ABOUT</a></li>
-                <li><a class="navLink" href="#">PORTFOLIO</a></li>
-                <li><a class="navLink" href="#">CONTACT</a></li>
+                <li><a class="navLink" id="homeBtn" href="#home">HOME</a></li>
+                <li><a class="navLink" id="aboutBtn" href="#about">ABOUT</a></li>
+                <li><a class="navLink" id="portfolioBtn" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="navLink" id="contactBtn" href="#contact">CONTACT</a></li>
             </ul>
+    </div>
+
+    <div class="projectsLb">
+    <span class="projectsClose">X</span>
+        <div class="portfolioPiece">
+
+        </div>
+
     </div>
 
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
