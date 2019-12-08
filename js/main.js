@@ -6,8 +6,23 @@
           navLightbox     =  document.querySelector('.navLightbox'),
           navLink         =  document.querySelectorAll('.navLink'),
           projectsCon     =  document.querySelector('.projects'),
-          portfolioPiece  =  document.querySelector('.portfolioPiece');
+          portfolioPiece  =  document.querySelector('.portfolioPiece'),
+          homeAnim1       =  document.querySelector('.homeAnim1'),
+          homeAnim2       =  document.querySelector('.homeAnim2'),
+          name            =  document.querySelector('.block'),
+          subtitleAnim1   =  document.querySelector('.subtitleAnim1'),
+          subtitleAnim2   =  document.querySelector('.subtitleAnim2'),
+          homeUnderline   =  document.querySelector('.homeUnderline');
 
+    // Landing Page Animation
+    const tlHome = new TimelineMax();
+
+    tlHome.from(homeAnim1, 1, { opacity: 0 , ease: Power1.easeIn })
+          .from(homeAnim2, 1, {opacity: 0, ease: Power1.easeIn })
+          .from(name, 1, {opacity: 0, ease: Power1.easeIn })  
+          .from(subtitleAnim1, 1, {opacity: 0, ease: Power1.easeIn })
+          .from(subtitleAnim2, 1, {opacity: 0, ease: Power1.easeIn })
+          .from(homeUnderline, .5, {opacity: 0, x: -20, ease: Power1.easeIn }); 
         
     // Get portafolio Data
     function getPortfolio(){
@@ -38,9 +53,8 @@
 
     getPortfolio();
 
-    // Get Portfolio Projects 
+    // Get Portfolio Projects on Lightbox
     function getProject(){
-
 
         let url         = `includes/portfolio/read.php?id=${this.dataset.target}`,
             projectsLb  = document.querySelector('.projectsLb');
@@ -55,8 +69,6 @@
         .then(res => res.json())
         .then(data => {   
             console.log(data[0]);
-          
-            
 
             portfolioPiece.innerHTML = `
                 <h2 class="projectName projectAnim">${data[0].Name}</h2>
@@ -75,13 +87,13 @@
 
             console.log(projectItem);
 
-            tlProject.staggerFrom(projectItem, 1.5, {opacity:0, ease: Power1.easeIn}, 0.2)
+            tlProject.staggerFrom(projectItem, 1.5, {opacity:0, ease: Power1.easeIn}, 0.3)
 
         })
         .catch((err) => console.log(err));
     }
     
-    // Navigation
+    // Navigation Lightbox
 
     function openNav(){
         let navLink = document.querySelectorAll('.navLink'),
@@ -93,30 +105,26 @@
 
         let tl = new TimelineMax();
 
-        // tl.to(navLightbox, 0.5, { opacity: 0})
          tl.from(navLightbox, 0.6, { opacity: 0}, { opacity: 1,  ease: Power0.easeNone})
           .staggerFrom(navLink, 1.5, {opacity:0, ease: Power1.easeIn}, 0.2)
-          .from(closeNav, 0.2, {opacity: 0, ease: Power1.easeIn });  
+          .from(closeNav, 0.3, {opacity: 0, ease: Power1.easeIn });  
     }
 
+    // close Navigation
     function closeNav(e){
         e.preventDefault();
         navLightbox.classList.remove('navLightboxOn');
 
-
         let targetArea = e.currentTarget.id.slice(0,-3);
-        console.log(targetArea);
+        target = '#' + targetArea;
 
-	    TweenMax.to(window, 1, {scrollTo:{y:`#${targetArea}`, offsetY:60, autoKill:false, ease: Power1.easeIn}});
+	    TweenMax.to(window, 1, {scrollTo:{y: target, offsetY:60, autoKill:false, ease: Power1.easeIn}});
     }
     
     
     menu.addEventListener('click', openNav);
     navLink.forEach(link => link.addEventListener('click', closeNav));
     navLightbox.querySelector('.navClose').addEventListener('click', closeNav);
-
-
-    
 
     
  })();
