@@ -118,7 +118,7 @@
         let targetArea = e.currentTarget.id.slice(0,-3);
         target = '#' + targetArea;
 
-	    TweenMax.to(window, 1, {scrollTo:{y: target, offsetY:60, autoKill:false, ease: Power1.easeIn}});
+	    TweenLite.to(window, 1, {scrollTo:{y: target, offsetY:60, autoKill:false, ease: Power1.easeIn}});
     }
     
     

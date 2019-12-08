@@ -10,16 +10,13 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
       integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
 </head>
 <body>
     <h1 class="hidden">Jimmy Calderon | Portfolio Website</h1>
@@ -119,13 +116,13 @@
             
                 <form action="includes/data/contact.php" method="post">
                     <label for="name-field">NAME</label>
-                    <input id="name-field" name="name" type="text" placeholder="">
+                    <input id="name-field" name="name" type="text" placeholder="" required>
                     <label for="email-field">EMAIL</label>
-                    <input id="email-field" name="email" type="email" placeholder="">
+                    <input id="email-field" name="email" type="email" placeholder="" required>
                     <label for="subject-field">SUBJECT</label>
-                    <input id="subject-field" name="subject" type="text" placeholder="">
+                    <input id="subject-field" name="subject" type="text" placeholder="" required>
                     <label for="message-field">MESSAGE</label>
-                    <textarea id="message-field" name="message"></textarea>
+                    <textarea id="message-field" name="message" required></textarea>
                     <button class="btnForm" type="submit">SEND MESSAGE -></button>
                 </form>
 

@@ -37,9 +37,36 @@
         'Reply-To'=>$name.'<'.$email.'>'
     ];
 
-    if(mail($recipient, $subject, $message, $headers)){
-        echo '<p>Thank you for contacting me, '.$name.'. You will get a reply within 24 hours</p>';
-    }else{
-        echo '<p>We are sorry but the email did not go through</p>';
-    }
+    
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jimmy Calderon | Contact</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon.ico">
+    <link href="../../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 class="hidden">Thank You For Contacting Me Page</h1>
+      
+    <div class="mainCon">
+
+    <?php 
+    if(mail($recipient, $subject, $message, $headers)){
+        echo '<p class="thankYou">Thank you for contacting me, '.$name.'. <br>You will receive a reply within the next 48 hours</p>';
+    }else{
+        echo '<p class="thankYou>We are sorry but the email did not go through</p>';
+    }
+    ?>
+
+    <a href="../../index.html" class="goBack">Go back</a>
+
+    </div>
+    
+</body>
+</html>
