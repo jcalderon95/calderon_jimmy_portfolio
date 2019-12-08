@@ -121,7 +121,6 @@
     }
 
     function closeNav(e){
-        
         navLightbox.classList.remove('navLightboxOn');
     }
     
