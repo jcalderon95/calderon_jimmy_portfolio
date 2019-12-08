@@ -2,7 +2,7 @@
 
 ## The Project
  
-Mobile first responsive web application with dynamic content. This application was created using PHP on the server side to retrieve data from a database and on the client side JavaScript is used to fetch the data and render it on the browser.
+Mobile first responsive web application with dynamic content. This application was created using PHP on the server side to retrieve data from a database and on the client side JavaScript is used to fetch the data and render the dynamic data on the browser.
 
 
 ## Prerequisites
