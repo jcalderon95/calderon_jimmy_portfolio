@@ -11,7 +11,7 @@
 
     .contactText{
         font-family: $main-font;
-        font-size: 25px;
+        font-size: 27px;
         font-weight: 300;
         font-style: normal;
         color: $grey;
@@ -32,7 +32,9 @@
     .formCon{
         background-color: #2D2D2F;
         max-width: 700px;
-        filter: drop-shadow(0 0 0.75rem rgb(32, 32, 33) );
+        box-shadow:(0 0 3rem rgb(32, 32, 33) );
+        -moz-box-shadow: (0 0 3rem rgb(32, 32, 33) );
+        -webkit-box-shadow: (0 0 3rem rgb(32, 32, 33) );
         padding-top: 78px;
         margin-bottom: 100px;
 
@@ -84,7 +86,9 @@
                 margin: 0 auto;
                 padding: 10px 20px 10px 20px;
                 margin-top: 70px;
-                filter: drop-shadow(0 0 1rem rgb(32, 32, 33) );
+                box-shadow:(0 0 2rem rgb(32, 32, 33) );
+                -moz-box-shadow: (0 0 2rem rgb(32, 32, 33) );
+                -webkit-box-shadow: (0 0 2rem rgb(32, 32, 33) );
                 background-color: #2D2D2F;
                 margin-bottom: 50px;
 
@@ -92,7 +96,6 @@
 
                     &:hover{
                          transform: scale(1.02);
-                         filter: drop-shadow(0 0 1rem rgb(27, 27, 28) );
                          color: rgb(142, 142, 142);
                     }
             }
