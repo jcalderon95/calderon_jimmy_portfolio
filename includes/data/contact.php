@@ -58,7 +58,7 @@
 
     <?php 
     if(mail($recipient, $subject, $message, $headers)){
-        echo '<p class="thankYou">Thank you for contacting me, '.$name.'. <br>You will receive a reply within the next 48 hours</p>';
+        echo '<p class="thankYou">Thank you for contacting me, '.$name.'. <br>I will get back to you within two business days</p>';
     }else{
         echo '<p class="thankYou>We are sorry but the email did not go through</p>';
     }

@@ -88,16 +88,22 @@
 
     
 
-    <!-- <section class="videoReel">
+    <section class="videoReel">
         <h2 class="header">VIDEO REEL</h2>
 
-        <h3>See my latest motion design work.</h3>
+        <h3 class="reelHeader">See my latest motion design work.</h3>
 
-        <img src="images/grey_underline.svg" alt="Grey Underline Image">
+        <img src="images/grey_underline.svg" alt="Grey Underline Image" class="underlineReel">
 
-        <video src="video/" class="reel"></video>
+        <video controls>
+                <source src="video/reel.mp4" type="video/mp4">
+                <source src="myVideo.webm" type="video/webm">
+                <p>Your browser doesn't support HTML5 video. Here is
+               a <a href="video/reel.mp4">link to the video</a> instead.</p>
+       </video>
 
-    </section> -->
+
+    </section>
 
     <!-- contact section -->
 
@@ -105,9 +111,7 @@
             <h2 class="header">CONTACT</h2>
 
             <p class="contactText">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Odio ratione autem explicabo cupiditate harum dolorem dolores recusandae?
-                Doloribus beatae quos corporis vitae laudantium
+                 Get in touch. Send me an email and let’s talk about your project, I can help bring your ideas to life. 
             </p>
 
             <img class="underlineContact" src="images/grey_underline.svg" alt="Grey Underline Image">
@@ -130,6 +134,22 @@
         </section>
     <!-- end contact -->
 
+    <section class="socialMedia">
+        <h2 class="hidden">Social Media</h2>
+        
+        <a href="https://twitter.com/jimmycalderon_" target="_blank"> 
+            <img src="images/twitter.svg" class="icon" alt="Twitter Icon">
+        </a>
+
+        <a href="https://www.instagram.com/jimmycalderon_/" target="_blank"> 
+            <img src="images/instagram.svg" class="icon" alt="Instagram Icon">
+        </a>
+
+        <a href="https://github.com/jcalderon95" target="_blank"> 
+            <img src="images/github.svg" class="icon" alt="Github Icon">
+        </a>
+    </section>
+
     <div class="navLightbox">
             <span class="navClose">X</span>
             <ul>
@@ -151,6 +171,8 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
 
 
 

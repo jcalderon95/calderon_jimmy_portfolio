@@ -1,0 +1,24 @@
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 210px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    height: 50px;
+    
+
+    a{
+        text-decoration: none;
+        transition: transform .3s;
+
+        &:hover{
+            transform: scale(1.08);
+        }
+    }
+
+    .icon{
+        max-width: 35px;
+        height: 35px;
+    }
+}
