@@ -87,7 +87,7 @@
 
             console.log(projectItem);
 
-            tlProject.staggerFrom(projectItem, 1.5, {opacity:0, ease: Power1.easeIn}, 0.3)
+            tlProject.staggerFrom(projectItem, 1.2, {opacity:0, ease: Power1.easeIn}, 0.3)
 
         })
         .catch((err) => console.log(err));
@@ -111,19 +111,22 @@
     }
 
     // close Navigation
-    function closeNav(e){
-        e.preventDefault();
+    function scrollTo(e){
         navLightbox.classList.remove('navLightboxOn');
-
+        e.preventDefault();
         let targetArea = e.currentTarget.id.slice(0,-3);
         target = '#' + targetArea;
 
 	    TweenLite.to(window, 1, {scrollTo:{y: target, offsetY:60, autoKill:false, ease: Power1.easeIn}});
     }
+
+    function closeNav(e){
+        navLightbox.classList.remove('navLightboxOn');
+    }
     
     
     menu.addEventListener('click', openNav);
-    navLink.forEach(link => link.addEventListener('click', closeNav));
+    navLink.forEach(link => link.addEventListener('click', scrollTo));
     navLightbox.querySelector('.navClose').addEventListener('click', closeNav);
 
     

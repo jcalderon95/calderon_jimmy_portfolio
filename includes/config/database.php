@@ -3,7 +3,7 @@ class Database{
     private $host = 'localhost';
     private $db_name = 'db_portfolio';
     private $username = 'root';
-    private $password = 'root'; //root for macs
+    private $password = 'root'; //root for macs 
 
     public $conn;
 
