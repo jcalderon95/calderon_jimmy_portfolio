@@ -19,6 +19,7 @@ nav{
     #menu{
         width: 32px;
         transition: .3s ease-in;
+        cursor: pointer;
 
         &:hover{
             transform: scale(1.1);

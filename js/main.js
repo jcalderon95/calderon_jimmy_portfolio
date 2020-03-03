@@ -1,6 +1,6 @@
 (() => {
 
-    console.log('fired');
+    //console.log('fired');
 
     const menu            =  document.querySelector('.menuCon'),
           navLightbox     =  document.querySelector('.navLightbox'),
@@ -68,7 +68,7 @@
         fetch(url)
         .then(res => res.json())
         .then(data => {   
-            console.log(data[0]);
+            //console.log(data[0]);
 
             portfolioPiece.innerHTML = `
                 <h2 class="projectName projectAnim">${data[0].Name}</h2>
@@ -85,7 +85,7 @@
             let projectItem = document.querySelectorAll('.projectAnim');
             let tlProject = new TimelineMax();
 
-            console.log(projectItem);
+            //console.log(projectItem);
 
             tlProject.staggerFrom(projectItem, 1.2, {opacity:0, ease: Power1.easeIn}, 0.3)
 
