@@ -19,7 +19,6 @@ class Portfolio{
                 ':id'=>$id
             )
         );
-
         // $stmt = $this->conn->prepare($query);
         // $stmt->execute();
 
@@ -30,14 +29,12 @@ class Portfolio{
     }
 
     public function getPortfolio(){
-        $query = 'SELECT * FROM tbl_projects';
+        $query = 'SELECT * FROM '.$this->portfolio_table;
 
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
         return $stmt;
     }
-
-
 
 }
