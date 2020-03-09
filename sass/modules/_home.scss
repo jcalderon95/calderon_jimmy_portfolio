@@ -1,5 +1,6 @@
 .homeContainer{
     height: 100vh;
+    min-height: 578px;
 }
 
 .homeSection{
@@ -45,10 +46,15 @@
 }
 
 @media screen and (min-width: 400px){
+    .homeContainer{
+        height: 100vh;
+        min-height: 660px;   
+    }
+
 	.homeSection{
         margin-top: 120px;
         margin-bottom: 200px;
-
+        
         .title{
             font-size: 35px;
             line-height: 40px;
@@ -125,6 +131,7 @@
 
     .homeContainer{
         height: 100vh;
+        min-height: 750px;
     }
 
 	.homeSection{
