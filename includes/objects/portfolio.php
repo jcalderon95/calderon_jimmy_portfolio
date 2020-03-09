@@ -10,17 +10,23 @@ class Portfolio{
     }
 
     public function getProjectByID($id){
-        $query = 'SELECT
-        *
-    FROM
-        '.$this->portfolio_table.'
-    WHERE
-    ID= '.$id;
+        $pdo = Database::getInstance()->getConnection();
 
-        $stmt = $this->conn->prepare($query);
-        $stmt->execute();
+        $query = 'SELECT * FROM '.$this->portfolio_table.' WHERE ID= :id';
+        $stmt = $pdo->prepare($query);
+        $stmt->execute(
+            array(
+                ':id'=>$id
+            )
+        );
+
+        // $stmt = $this->conn->prepare($query);
+        // $stmt->execute();
 
         return $stmt;
+
+
+    return $stmt;
     }
 
     public function getPortfolio(){

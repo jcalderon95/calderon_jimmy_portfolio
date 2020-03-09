@@ -8,8 +8,8 @@ include_once '../config/database.php';
 include_once '../objects/portfolio.php';
 
 // instantiate database and movie object
-$database = new Database();
-$db = $database->getConnection();
+//$database = new Database();
+$db = Database::getInstance()->getConnection();
 $portfolio = new Portfolio($db);
 
 if(isset($_GET['id'])){
