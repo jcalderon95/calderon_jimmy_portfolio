@@ -106,8 +106,8 @@
         let tl = new TimelineMax();
 
          tl.from(navLightbox, 0.6, { opacity: 0}, { opacity: 1,  ease: Power0.easeNone})
-          .staggerFrom(navLink, 1.5, {opacity:0, ease: Power1.easeIn}, 0.2)
-          .from(closeNav, 0.3, {opacity: 0, ease: Power1.easeIn });  
+          .staggerFrom(navLink, 1, {opacity:0, ease: Power1.easeIn}, 0.2)
+          .from(closeNav, 0.1, {opacity: 0, ease: Power1.easeIn });  
     }
 
     // close Navigation
