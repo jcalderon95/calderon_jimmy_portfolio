@@ -1,0 +1,49 @@
+.projectCon{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 80px;
+
+    .chatappImage{
+        display: block;
+        margin: 0 auto;
+        max-width: 750px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .chatappImage2{
+        display: block;
+        margin: 0 auto;
+        max-width: 650px;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .visit{
+        text-decoration: none;
+        display: block;
+        width: 121px;
+        font-family: $main-font;
+        color: #7E7E7E;
+        font-size: 25px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 1px;
+        border: none;
+        margin: 0 auto;
+        padding: 10px 20px 10px 20px;
+        margin-top: 70px;
+        box-shadow:(0 0 2rem rgb(32, 32, 33) );
+        -moz-box-shadow: (0 0 2rem rgb(32, 32, 33) );
+        -webkit-box-shadow: (0 0 2rem rgb(32, 32, 33) );
+        background-color: #2D2D2F;
+        margin-bottom: 50px;
+
+        transition: .3s ease-in;
+
+            &:hover{
+                 transform: scale(1.02);
+                 color: rgb(142, 142, 142);
+            }
+    }
+}

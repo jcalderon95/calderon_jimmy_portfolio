@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.ico">
+    <title>Jimmy Calderon | Portfolio</title>
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+</head>
+<body>
+    <h1 class="hidden">Jimmy Calderon | Portfolio Website</h1>
+
+<div class="homeContainer">
+    <header>   
+        <nav>
+        <h2 class="hidden">Main Navigation</h2>
+            <div class="logoCon">
+                <a href="../index.html">
+                    <img src="../images/logo.svg" alt="Logo Image" id="logo">
+                </a>
+            </div>
+
+            <div class="menuCon">
+                <img src="../images/menu.svg" alt="Menu Button" id="menu">
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="hidden">CHAT APPLICATION Page</h1>
+
+    <div class="projectCon">
+        <h2 class="porjectsTitle">CHAT APPLICATION</h2>
+        <h3 class="typeProject">Web Development -  Web Desing</h3>
+
+        <img src="../images/chatapp.png" alt="Chat Application Mockups" class="chatappImage">
+
+        <p class="descriptionProjects">
+            Interactive chat application that allows users to join a chat room where they can send and receive messages and notifications. This application was created using Node.js and Express on the back-end, in addition I used the webSocket socket.io which allows the app to have real-time, bidirectional and event-based communication. On the client side 
+            I used the front-end JavaScript framework Vue.js to render the messages and notifications as components.
+        </p>
+
+        <img src="../images/chatapp_mobile.png" alt="Chat Application Mobile Mockup" class="chatappImage2">
+
+        <a href="https://chat-app-authoring4.herokuapp.com/" target="_blank" class="visit">Visit the Site</a>
+    </div>
+
+
+    <section class="socialMedia">
+        <h2 class="hidden">Social Media</h2>
+        
+        <a href="https://twitter.com/jimmycalderon_" target="_blank"> 
+            <img src="../images/twitter.svg" class="icon" alt="Twitter Icon">
+        </a>
+
+        <a href="https://vimeo.com/user109416859" target="_blank"> 
+            <img src="../images/vimeo.svg" class="icon" alt="Vimeo Icon">
+        </a>
+
+        <a href="https://github.com/jcalderon95" target="_blank"> 
+            <img src="../images/github.svg" class="icon" alt="Github Icon">
+        </a>
+    </section>
+
+    <div class="navLightbox">
+            <span class="navClose">X</span>
+            <ul>
+                <li><a class="navLink" id="homeBtn" href="../index.html#home">HOME</a></li>
+                <li><a class="navLink" id="aboutBtn" href="../index.html#about">ABOUT</a></li>
+                <li><a class="navLink" id="portfolioBtn" href="../index.html#portfolio">PORTFOLIO</a></li>
+                <li><a class="navLink" id="contactBtn" href="../index.html#contact">CONTACT</a></li>
+            </ul>
+    </div>
+
+    <script src="../js/portfolio.js"></script>
+</body>
+</html>

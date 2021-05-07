@@ -1,0 +1,71 @@
+.projectCon{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 80px;
+
+    .porjectsTitle{
+        font-family: $main-font;
+        font-size: 23px;
+        font-weight: 300;
+        font-style: normal;
+        color: $gold;
+        text-transform: uppercase;
+        line-height: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .typeProject{
+        text-align: center;
+        font-family: $main-font;
+        font-size: 23px;
+        font-weight: 300;
+        font-style: normal;
+        color: $grey;
+        margin-bottom: 15px;
+        margin-bottom: 50px;
+    }
+    
+
+    .traaLarge{
+        display: block;
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    .descriptionProjects{
+        font-family: $main-font;
+        font-size: 23px;
+        font-weight: 300;
+        font-style: normal;
+        color: $grey;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+        max-width: 700px;
+        margin-top: 40px;
+    }
+
+    .traaMobile{
+        display: block;
+        margin: 0 auto;
+        max-width: 600px;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .traaVideo{
+        max-width: 800px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+

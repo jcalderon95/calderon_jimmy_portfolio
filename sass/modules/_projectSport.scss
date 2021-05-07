@@ -1,0 +1,44 @@
+.projectCon{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 80px;
+
+    .heroSport{
+        display: block;
+        margin: 0 auto;
+        max-width: 750px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .imagesCon{
+        margin: 0 auto;
+        margin-top: 60px;
+        max-width: 1010px;
+
+        .sportImages{
+            display: block;
+            margin: 0 auto;
+            max-width: 500px;
+            width: 100%;
+            // margin: 0 auto;
+            margin-top: 8px;
+        }
+    }
+
+    .vidCon{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .projectCon{
+        .imagesCon{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 4px;
+    
+        }
+    }
+}
