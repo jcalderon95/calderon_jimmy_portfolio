@@ -17,12 +17,12 @@
     // Landing Page Animation
     const tlHome = new TimelineMax();
 
-    tlHome.from(homeAnim1, 1, { opacity: 0 , ease: Power1.easeIn })
-          .from(homeAnim2, 1, {opacity: 0, ease: Power1.easeIn })
-          .from(name, 1, {opacity: 0, ease: Power1.easeIn })  
-          .from(subtitleAnim1, 1, {opacity: 0, ease: Power1.easeIn })
-          .from(subtitleAnim2, 1, {opacity: 0, ease: Power1.easeIn })
-          .from(homeUnderline, .5, {opacity: 0, x: -20, ease: Power1.easeIn }); 
+    tlHome.from(homeAnim1, .8, { opacity: 0 , ease: Power1.easeIn })
+          .from(homeAnim2, .7, {opacity: 0, ease: Power1.easeIn })
+          .from(name, .7, {opacity: 0, ease: Power1.easeIn })  
+          .from(subtitleAnim1, .8, {opacity: 0, ease: Power1.easeIn })
+          .from(subtitleAnim2, .8, {opacity: 0, ease: Power1.easeIn })
+          .from(homeUnderline, .4, {opacity: 0, x: -20, ease: Power1.easeIn }); 
         
     // Get portafolio Data
     function getPortfolio(){
@@ -51,7 +51,8 @@
             .catch((err) => console.log(err));
     }
 
-    getPortfolio();
+    // getPortfolio();
+
 
     // Get Portfolio Projects on Lightbox
     function getProject(){
